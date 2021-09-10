@@ -1,0 +1,18 @@
+{% extends "structcomp/base.html" %}
+{% block title %}
+
+{% endblock %}
+{% block content %}
+<h4>Список сотрудников подразделения</h4>
+    {% for employee in list_employee %}
+    <div>
+        {{employee}},
+        {{employee.status}},
+        {{employee.salary}},
+        {{employee.date_acceptance}},
+        {{employee.department}}
+    </div>
+        
+
+    {% endfor %}
+{% endblock %}

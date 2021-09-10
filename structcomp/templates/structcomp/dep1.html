@@ -1,0 +1,12 @@
+{% extends "structcomp/base.html" %}
+{% block title %}
+
+{% endblock %}
+{% block content %}
+<h3>Департамент № 1</h3>
+<a button class="btn btn-primary" type="submit" href="{% url 'dep1_1' %}">Подразделение №1</a>
+<a button class="btn btn-primary" type="submit" href="{% url 'dep2_1' %}">Подразделение №2</a>
+<a button class="btn btn-primary" type="submit" href="{% url 'dep3_1' %}">Подразделение №3</a>
+<a button class="btn btn-primary" type="submit" href="{% url 'dep4_1' %}">Подразделение №4</a>
+<a button class="btn btn-primary" type="submit" href="{% url 'dep5_1' %}">Подразделение №5</a>
+{% endblock %}
